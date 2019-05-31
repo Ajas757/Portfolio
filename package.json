@@ -1,0 +1,25 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "This is my responsive portfolio website build with Sass and Vanilla JS.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajas757/My_Portfolio.git"
+  },
+  "keywords": [
+    "node-sass"
+  ],
+  "author": "Ajas Sharafudeen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ajas757/My_Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ajas757/My_Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
