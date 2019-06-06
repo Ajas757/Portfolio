@@ -96,12 +96,10 @@
     color: #000; }
 
 .btn-dark {
-  background: black;
-  color: #fff; }
+  background: #2f1447; }
 
 .btn-light {
-  background: #bc94e0;
-  color: #333; }
+  background: #8a44ca; }
 
 * {
   box-sizing: border-box; }
@@ -181,6 +179,24 @@ main {
       opacity: 0.7;
       border-color: #fff748;
       transition: 0.6s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.5rem;
+    background: #ead4ff1e;
+    border: 2px solid #fff748;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: 0.6s ease-out; }
+    .boxes div:hover {
+      padding: 0.8rem 1.3rem;
+      background: #3c1a5b;
+      color: #fff; }
 
 @media screen and (min-width: 1171px) {
   .projects {

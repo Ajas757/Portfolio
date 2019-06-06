@@ -12,12 +12,10 @@
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
+  background: darken($primary-color, 5);
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
+  background: lighten($primary-color, 30);
 }
