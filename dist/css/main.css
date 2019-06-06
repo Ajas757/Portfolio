@@ -92,7 +92,25 @@
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  div.menu-brand,
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    div.menu-brand.show,
+    ul.menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: rotateY(90deg);
+    font-size: 24px; }
+  .menu-brand {
+    height: 25vh;
+    transform: rotateY(90deg); }
+    .menu-brand .portrait {
+      width: 150px;
+      height: 150px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

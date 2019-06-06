@@ -15,6 +15,35 @@
       margin-bottom: 1rem;
     }
   }
+
+  // Shifting navs from side by side to layered
+  div.menu-brand,
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: rotateY(90deg);
+    font-size: 24px;
+  }
+
+  .menu-brand {
+    height: 25vh;
+    transform: rotateY(90deg);
+
+    .portrait {
+      //add smaller picture here
+      width: 150px;
+      height: 150px;
+    }
+  }
 }
 // For Mobile Screen
 @include mediaSm {
