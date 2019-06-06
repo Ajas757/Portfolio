@@ -1,6 +1,6 @@
 @import "config";
 @import "menu";
-@import "mobile";
+@import "button";
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,7 @@
 body {
   @include background;
   background: $primary-color;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -76,3 +77,23 @@ main {
     }
   }
 }
+
+//Projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px solid #fff;
+
+    &:hover {
+      opacity: 0.7;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+@import "mobile";
