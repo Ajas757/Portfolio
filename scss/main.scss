@@ -67,6 +67,7 @@ main {
     &:hover {
       color: $secondary-color;
       @include easeOut();
+      @include blinkEffect();
     }
   }
 
@@ -91,7 +92,8 @@ main {
     &:hover {
       opacity: 0.7;
       border-color: $secondary-color;
-      @include easeOut;
+      @include blinkEffect;
+      animation-duration: 0.65s;
     }
   }
 }
