@@ -5,17 +5,19 @@
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
     color: set-text-color($primary-color);
+    background: $secondary-color;
   }
 }
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 5);
+  background: darken($primary-color, 1);
+  border-radius: 3px;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 30);
+  background: lighten($primary-color, 25);
+  border-radius: 3px;
 }

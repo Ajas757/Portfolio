@@ -35,19 +35,19 @@
   }
 
   .menu-nav {
-    height: 75vh;
-    transform: rotateY(90deg);
+    height: 70vh;
+    transform: translate3d(0, 100%, 0);
     font-size: 24px;
   }
 
   .menu-brand {
-    height: 25vh;
-    transform: rotateY(90deg);
+    height: 30vh;
+    transform: translate3d(0, -100%, 0);
 
     .portrait {
-      //add smaller picture here
-      width: 150px;
-      height: 150px;
+      background: url("../img/portrait.jpg");
+      width: auto;
+      height: 100%;
     }
   }
 }
