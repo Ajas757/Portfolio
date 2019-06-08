@@ -1,11 +1,19 @@
 // For Widescreens
 @include mediaXL {
+  .item {
+    align-items: center;
+    text-align: center;
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 // For Desktops and Laptops
 @include mediaLg {
+  .item {
+    align-items: center;
+    text-align: center;
+  }
 }
 // For Small Laptops and Tablets
 @include mediaMd {

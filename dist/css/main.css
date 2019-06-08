@@ -108,8 +108,12 @@
 * {
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
 body {
   background: #3c1a5b;
+  background-size: auto;
   color: #000;
   height: 100%;
   margin: 0;
@@ -225,8 +229,16 @@ main {
       color: #fff; }
 
 @media screen and (min-width: 1171px) {
+  .item {
+    align-items: center;
+    text-align: center; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .item {
+    align-items: center;
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   main {

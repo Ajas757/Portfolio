@@ -5,10 +5,13 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  height: 100%;
+}
 body {
   @include background;
   background: $primary-color;
+  background-size: auto;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
