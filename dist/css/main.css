@@ -121,7 +121,7 @@ body {
  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6; }
   body#bg-img {
-    background: url(https://res.cloudinary.com/dgkbxgdt5/image/upload/v1552470075/samples/bike.jpg);
+    background: url(../../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
