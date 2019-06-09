@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Ajas757/My_Portfolio/issues"
   },
-  "homepage": "https://github.com/Ajas757/My_Portfolio#readme",
+  "homepage": "https://github.com/Ajas757/Portfolio/dist/index.html",
   "dependencies": {
     "node-sass": "^4.12.0"
   }
