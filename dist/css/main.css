@@ -121,7 +121,7 @@ body {
  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6; }
   body#bg-img {
-    background: url(../../img/background.jpg);
+    background: url(../../img/background.JPG);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
