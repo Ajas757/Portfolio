@@ -81,6 +81,14 @@ main {
   }
 }
 
+.about-info {
+  display: grid;
+  grid-template-areas:
+    "bioimage bio bio"
+    "bioimage job1 job2";
+  grid-template-columns: repeat(3, 1fr);
+}
+
 //Projects
 .projects {
   display: grid;

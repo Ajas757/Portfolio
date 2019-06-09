@@ -187,6 +187,11 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+.about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "bioimage job1 job2";
+  grid-template-columns: repeat(3, 1fr); }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
