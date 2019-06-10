@@ -19,7 +19,6 @@
     transform: rotate(-180deg);
 
     .btn-line {
-      background: $secondary-color;
       //Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);

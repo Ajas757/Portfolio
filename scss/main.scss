@@ -57,7 +57,7 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
   height: 100%;
 
   .icons {
@@ -83,11 +83,11 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "bioimage job1 job2";
-  grid-template-columns: repeat(3, 1fr);
+    "bioimage bio"
+    "bioimage Education"
+    "skills job3";
+  grid-template-columns: repeat(1, 1fr);
 
   .bio-image {
     grid-area: bioimage;
@@ -97,20 +97,26 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
   }
 
-  .job-1 {
-    grid-area: job1;
+  .Education {
+    grid-area: Education;
   }
 
-  .job-2 {
-    grid-area: job2;
+  .skills {
+    grid-area: skills;
   }
 
-  .job,
+  .job-3 {
+    grid-area: job3;
+    border-left: $secondary-color 5px solid;
+  }
+
+  .tile,
   .bio {
-    background: lighten($primary-color, 5);
+    background: $textures;
+    font-size: 1.2rem;
+    color: white;
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
@@ -144,7 +150,8 @@ main {
 
   div {
     font-size: 1.5rem;
-    background: #ead4ff1e;
+    color: #fff;
+    background: $textures;
     border: 2px solid $secondary-color;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;

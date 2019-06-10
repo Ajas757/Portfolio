@@ -30,7 +30,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  // Shifting navs from side by side to layered
+  // _Shifting navs from side by side to layered
   div.menu-brand,
   ul.menu-nav {
     float: none;
@@ -56,6 +56,27 @@
       background: url("../img/portrait.jpg");
       width: auto;
       height: 100%;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "Education"
+      "skills"
+      "others";
+
+    grid-template-columns: 1fr;
+
+    .bio-image {
+      margin: auto;
+      width: 100%;
+    }
+
+    .tile,
+    .bio {
+      margin-bottom: 12px;
     }
   }
 }

@@ -13,14 +13,12 @@
     transition: 0.6s ease-out; }
   .menu-btn.close {
     transform: rotate(-180deg); }
-    .menu-btn.close .btn-line {
-      background: #fff748; }
-      .menu-btn.close .btn-line:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px); }
-      .menu-btn.close .btn-line:nth-child(2) {
-        opacity: 0; }
-      .menu-btn.close .btn-line:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px); }
 
 .menu {
   position: fixed;
@@ -162,7 +160,7 @@ header {
   color: #fff748; }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
   height: 100%; }
   main .icons {
     margin-top: 1rem; }
@@ -189,23 +187,26 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "bioimage job1 job2";
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: "bioimage bio" "bioimage Education" "skills job3";
+  grid-template-columns: repeat(1, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     height: auto;
     max-width: 30vw; }
   .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job,
+    grid-area: bio; }
+  .about-info .Education {
+    grid-area: Education; }
+  .about-info .skills {
+    grid-area: skills; }
+  .about-info .job-3 {
+    grid-area: job3;
+    border-left: #fff748 5px solid; }
+  .about-info .tile,
   .about-info .bio {
-    background: #49206f;
+    background: url("https://www.transparenttextures.com/patterns/black-linen.png");
+    font-size: 1.2rem;
+    color: white;
     padding: 0.5rem;
     border-bottom: #fff748 5px solid; }
 
@@ -240,7 +241,8 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 1.5rem;
-    background: #ead4ff1e;
+    color: #fff;
+    background: url("https://www.transparenttextures.com/patterns/black-linen.png");
     border: 2px solid #fff748;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
@@ -289,7 +291,16 @@ main {
     .menu-brand .portrait {
       background: url("../img/portrait.jpg");
       width: auto;
-      height: 100%; } }
+      height: 100%; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "Education" "skills" "others";
+    grid-template-columns: 1fr; }
+    .about-info .bio-image {
+      margin: auto;
+      width: 100%; }
+    .about-info .tile,
+    .about-info .bio {
+      margin-bottom: 12px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
