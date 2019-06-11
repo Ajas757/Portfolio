@@ -199,7 +199,7 @@ main {
     grid-area: Education; }
   .about-info .skills {
     grid-area: skills; }
-  .about-info .job-3 {
+  .about-info .others {
     grid-area: job3;
     border-left: #fff748 5px solid; }
   .about-info .tile,
