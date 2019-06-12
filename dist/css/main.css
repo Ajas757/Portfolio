@@ -96,7 +96,7 @@
     background: #fff748; }
 
 .btn-dark {
-  background: #391957;
+  background: #1f0e2f;
   border-radius: 3px; }
 
 .btn-light {
@@ -106,12 +106,8 @@
 * {
   box-sizing: border-box; }
 
-html {
-  height: 100%; }
-
 body {
   background: #3c1a5b;
-  background-size: auto;
   color: #fff;
   height: 100%;
   margin: 0;
