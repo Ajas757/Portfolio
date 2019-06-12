@@ -53,7 +53,6 @@
     transform: translate3d(0, -100%, 0);
 
     .portrait {
-      background: url("../img/portrait.jpg");
       width: auto;
       height: 100%;
     }
@@ -77,6 +76,10 @@
     .tile,
     .bio {
       margin-bottom: 12px;
+    }
+
+    .others {
+      border-left: none;
     }
   }
 }

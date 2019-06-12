@@ -52,7 +52,7 @@
     .menu-brand.show {
       transform: translate3d(0, 0, 0); }
     .menu-brand .portrait {
-      max-width: auto;
+      width: auto;
       height: 100%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -183,7 +183,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio" "bioimage Education" "skills job3";
+  grid-template-areas: "bioimage bio" "bioimage Education" "skills others";
   grid-template-columns: repeat(1, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -196,7 +196,7 @@ main {
   .about-info .skills {
     grid-area: skills; }
   .about-info .others {
-    grid-area: job3;
+    grid-area: others;
     border-left: #fff748 5px solid; }
   .about-info .tile,
   .about-info .bio {
@@ -285,7 +285,6 @@ main {
     height: 30vh;
     transform: translate3d(0, -100%, 0); }
     .menu-brand .portrait {
-      background: url("../img/portrait.jpg");
       width: auto;
       height: 100%; }
   .about-info {
@@ -296,7 +295,9 @@ main {
       width: 100%; }
     .about-info .tile,
     .about-info .bio {
-      margin-bottom: 12px; } }
+      margin-bottom: 12px; }
+    .about-info .others {
+      border-left: none; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
