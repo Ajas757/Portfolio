@@ -1,3 +1,4 @@
+//Menu button
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -10,7 +11,7 @@
     width: 30px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -41,7 +42,6 @@
   top: 0;
   width: 100%;
   visibility: hidden;
-  // opacity: 0.95;
 
   &.show {
     visibility: visible;
@@ -110,7 +110,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
