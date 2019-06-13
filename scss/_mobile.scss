@@ -89,6 +89,17 @@
     margin-top: 10vh;
   }
 
+  h1,
+  h2 {
+    &.lg-heading {
+      font-size: 2rem;
+    }
+
+    &.sm-heading {
+      font-size: 1rem;
+    }
+  }
+
   .projects {
     grid-template-columns: 1fr;
   }
