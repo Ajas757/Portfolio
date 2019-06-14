@@ -30,3 +30,7 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Animate.CSS Effects
+const icons = document.querySelector(".icons");
+icons.classList.add("animated", "fadeIn", "delay-1s");

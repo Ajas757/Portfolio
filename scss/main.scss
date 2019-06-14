@@ -1,5 +1,4 @@
 @import "config";
-@import "menu";
 @import "button";
 
 * {
@@ -162,4 +161,5 @@ main {
   }
 }
 
+@import "menu";
 @import "mobile";
