@@ -6,14 +6,24 @@
 }
 
 body {
-  @include background;
   background: $primary-color;
-  color: set-text-color($primary-color);
+  color: set-text-color($secondary-color);
   height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
+}
+
+.bg-video {
+  position: fixed;
+  background-position: center center;
+  background: cover;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  max-width: auto;
+  min-height: auto;
 }
 
 // Headings
@@ -48,10 +58,6 @@ header {
   width: 100%;
 }
 
-.text-secondary {
-  color: $secondary-color;
-}
-
 main {
   padding: 3rem;
   height: 100%;
@@ -61,7 +67,8 @@ main {
   }
 
   a {
-    padding: 0.4rem;
+    padding: 0.5rem;
+    font-weight: 400;
 
     &:hover {
       color: $secondary-color;
@@ -80,32 +87,21 @@ main {
 .about-info {
   display: grid;
   grid-template-areas:
-    "bioimage bio"
-    "bioimage Education"
-    "skills others";
-  grid-template-columns: repeat(1, 1fr);
-
-  .bio-image {
-    grid-area: bioimage;
-    height: auto;
-    max-width: 30vw;
-  }
+    "bio"
+    "education"
+    "skills";
+  grid-template-columns: 1fr;
 
   .bio {
     grid-area: bio;
   }
 
-  .Education {
-    grid-area: Education;
+  .education {
+    grid-area: education;
   }
 
   .skills {
     grid-area: skills;
-  }
-
-  .others {
-    grid-area: others;
-    border-left: $secondary-color 5px solid;
   }
 
   .tile,
@@ -115,6 +111,15 @@ main {
     color: white;
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+}
+
+.skillset {
+  display: flex;
+  flex-wrap: wrap;
+
+  .skill {
+    padding-right: 2rem;
   }
 }
 
@@ -137,6 +142,25 @@ main {
 }
 
 //Contact Page
+#contact {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  .lg-heading {
+    display: inline-block;
+  }
+}
+
+#particles-js {
+  min-height: auto;
+  min-width: auto;
+  overflow: hidden;
+  background: url(https://res.cloudinary.com/dgkbxgdt5/image/upload/v1561486170/snowglass.jpg);
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -148,13 +172,13 @@ main {
     font-size: 1.5rem;
     color: #fff;
     background: $textures;
-    border: 2px solid $secondary-color;
+    border-radius: 2px;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
-      padding: 0.8rem 1.3rem;
+      padding: 1.3rem 2.3rem;
       background: $primary-color;
       color: set-text-color($primary-color);
     }
