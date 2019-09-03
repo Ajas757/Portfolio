@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is my responsive portfolio website build with Sass and Vanilla JS.",
   "main": "index.js",
-  "homepage": "https://ajas757.github.io/Portfolio",
+  "homepage": "https://ajas757.github.io/Portfolio/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
