@@ -62,7 +62,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 2);
+    background: $primary-color;
     opacity: 0.95;
     list-style: none;
     transform: translate3d(100%, 0, 0);

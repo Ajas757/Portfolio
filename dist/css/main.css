@@ -108,9 +108,10 @@ main {
 
 .skillset {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap; }
   .skillset .skill {
-    padding-right: 2rem; }
+    padding-right: 1.5rem; }
 
 .projects {
   display: grid;
@@ -210,7 +211,7 @@ main {
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #0e2459;
+    background: #0f2862;
     opacity: 0.95;
     list-style: none;
     transform: translate3d(100%, 0, 0);
@@ -291,15 +292,7 @@ main {
     font-size: 24px; }
   .menu-brand {
     height: 0vh;
-    transform: translate3d(0, 100%, 0); }
-  .about-info {
-    grid-template-areas: "bio" "Education" "skills";
-    grid-template-columns: 1fr; }
-    .about-info .tile,
-    .about-info .bio {
-      margin-bottom: 12px; }
-    .about-info .others {
-      border-left: none; } }
+    transform: translate3d(0, 100%, 0); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -311,4 +304,8 @@ main {
   h2.sm-heading {
     font-size: 1rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  canvas {
+    min-height: 100vh; }
+  .boxes div {
+    font-size: 1.2rem; } }

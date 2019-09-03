@@ -116,10 +116,11 @@ main {
 
 .skillset {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   .skill {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
   }
 }
 
